@@ -1,33 +1,27 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Sample Deployment</title>
-  <style>
-    body {
-      color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
-</head>
-<body>
-  <div align="center">
-    <h1>SUCCEEDED !!!</h1>
-     </div>
-</body>
+	<center><body style="background-color:red;margin-top:10%;">
+		<form>
+			<h2>LOGIN</h2>
+			<p>USERNAME:<input type="text" name="un" id="un"><br><br></p>
+			<p>PASSWORD:<input type="password" name="pwd" id="pwd"><br><br></p>
+			<button onclick="fxn(un,pwd)">LOGIN</button>
+		</form>
+		
+		<script>
+			function fxn()
+			{
+				var uname=document.getElementById("un").value;
+				var pword=document.getElementById("pwd").value;
+				
+				if(uname=="iramma" && pword=="iramma")
+					alert("success");
+				else
+				{
+					alert("failed")
+				}
+					//window.location.replace="C:\Users\IrammaSH\Desktop\error.html";
+			}
+		</script>
+		
+	</body></center>
 </html>
-
